@@ -85,7 +85,15 @@ h1.ht .hi{color:var(--mint);display:block}
 
 /* Hero product cards */
 .hcards{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.hcard{background:rgba(255,255,255,.06);backdrop-filter:blur(10px);border:1px solid rgba(102,204,153,.18);border-radius:14px;padding:18px;transition:.3s;cursor:pointer}
+.hcard{background:rgba(255,255,255,.06);backdrop-filter:blur(10px);border:1px solid rgba(102,204,153,.18);border-radius:14px;overflow:hidden;transition:.3s;cursor:pointer;display:flex;flex-direction:column;padding:0}
+.hcard:hover{background:rgba(255,255,255,.1);border-color:var(--mint);transform:translateY(-3px)}
+.hcard-img{width:100%;height:110px;overflow:hidden;flex-shrink:0}
+.hcard-img img{width:100%;height:100%;object-fit:cover;display:block;transition:.3s}
+.hcard:hover .hcard-img img{transform:scale(1.05)}
+.hcard-img-emoji{width:100%;height:110px;display:flex;align-items:center;justify-content:center;font-size:42px}
+.hcard-body{padding:12px 14px;flex:1}
+.hcard.feat .hcard-img{height:140px}
+.hcard.feat{grid-column:span 2}
 .hcard:hover{background:rgba(255,255,255,.1);border-color:var(--mint);transform:translateY(-3px)}
 .hcard.feat{background:linear-gradient(135deg,rgba(102,204,153,.18),rgba(102,204,153,.04));border-color:rgba(102,204,153,.4);grid-column:span 2}
 .hce{font-size:28px;margin-bottom:8px;display:block}
@@ -450,48 +458,58 @@ footer{background:var(--ch-dk);padding:48px 0 24px;border-top:1px solid rgba(102
         </div>
       </div>
       <div class="reveal" style="transition-delay:.15s">
-        <div class="hcards">
-          <div class="hcard feat">
-  <img src="images/premium-milk-tea.png" alt="Premium Milk Tea"
-       style="width:60px;height:60px;object-fit:cover;
-              border-radius:10px;margin-bottom:8px;">
-  <div class="hcn">Premium Milk Tea</div>
-  <div class="hcd">Directly from Sylhet tea gardens.</div>
-  <span class="hcb">★ Bestseller</span>
-</div>
-          <div class="hcard">
-  <img src="images/natural-chak-honey.png" alt="Natural Chak Honey"
-       style="width:50px;height:50px;object-fit:cover;
-              border-radius:8px;margin-bottom:6px;">
-  <div class="hcn">Natural Chak Honey</div>
-  <div class="hcd">Raw, unfiltered, 100% natural.</div>
- </div>
-           <div class="hcard">
-  <img src="images/ghee.png" alt="Pure Ghee"
-       style="width:50px;height:50px;object-fit:cover;
-              border-radius:8px;margin-bottom:6px;">
-  <div class="hcn">Pure Ghee</div>
-  <div class="hcd">Traditional slow-cooked.</div>
- </div>
-           <div class="hcard">
-  <img src="images/traditional-khulna-chuijhal.png" alt="Traditional Khulna Chuijhal"
-       style="width:50px;height:50px;object-fit:cover;
-              border-radius:8px;margin-bottom:6px;">
-  <div class="hcn">Traditional Khulna Chuijhal</div>
-  <div class="hcd">The legendary spice.</div>
- </div>
-           <div class="hcard">
-  <img src="images/sweet-sour-yogurt.png" alt="টক-মিষ্টি দই (Clay Pot)"
-       style="width:50px;height:50px;object-fit:cover;
-              border-radius:8px;margin-bottom:6px;">
-  <div class="hcn">টক-মিষ্টি দই (Clay Pot)</div>
-  <div class="hcd">Traditional heritage yogurt.</div>
- </div>
-        </div>
-      </div>
+       <div class="hcards">
+  <div class="hcard feat">
+    <div class="hcard-img">
+      <img src="images/premium-milk-tea.png" alt="Premium Milk Tea">
+    </div>
+    <div class="hcard-body">
+      <div class="hcn">Premium Milk Tea</div>
+      <div class="hcd">Directly from Sylhet tea gardens. Rich aroma, bold taste.</div>
+      <span class="hcb">★ Bestseller</span>
     </div>
   </div>
-</section>
+
+  <div class="hcard">
+    <div class="hcard-img">
+      <img src="images/natural-chak-honey.png" alt="Natural Chak Honey">
+    </div>
+    <div class="hcard-body">
+      <div class="hcn">Natural Chak Honey</div>
+      <div class="hcd">Raw, unfiltered, 100% natural.</div>
+    </div>
+  </div>
+
+  <div class="hcard">
+    <div class="hcard-img">
+      <img src="images/ghee.png" alt="Premium Ghee">
+    </div>
+    <div class="hcard-body">
+      <div class="hcn">Premium Ghee</div>
+      <div class="hcd">Traditional slow-cooked.</div>
+    </div>
+  </div>
+
+  <div class="hcard">
+    <div class="hcard-img">
+      <img src="images/chuijhal.png" alt="Khulna ChuiJhal">
+    </div>
+    <div class="hcard-body">
+      <div class="hcn">Traditional Khulna Chuijhal</div>
+      <div class="hcd">The legendary spice.</div>
+    </div>
+  </div>
+
+  <div class="hcard">
+    <div class="hcard-img">
+      <img src="images/doi.png" alt="Clay Pot Doi">
+    </div>
+    <div class="hcard-body">
+      <div class="hcn">টক-মিষ্টি দই (Clay Pot)</div>
+      <div class="hcd">Traditional heritage yogurt.</div>
+    </div>
+  </div>
+</div>
 
 <!-- Tagline strip -->
 <div class="tstrip">
