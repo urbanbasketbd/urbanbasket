@@ -1118,7 +1118,7 @@ function updateCart() {
     if (el) el.textContent = count;
   });
   // update total
-  document.getElementById('cartTotal').textContent = '৳ ' + total.toLocaleString('bn-BD');
+  document.getElementById('cartTotal').textContent = '৳ ' + total.toLocaleString('en-BD');
   // render items
   const el = document.getElementById('cartItems');
   if (cart.length === 0) {
