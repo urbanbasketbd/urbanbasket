@@ -952,36 +952,107 @@ style="width:100%;height:100%;object-fit:cover;display:block;">
   <div class="container">
     <div class="binner">
       <div class="reveal tc">
-      <div class="bcircle"><div style="width:280px;height:280px;margin:0 auto;position:relative">
-  <svg width="100%" height="100%" viewBox="0 0 280 280" xmlns="http://www.w3.org/2000/svg">
-    <!-- Outer dashed ring -->
-    <circle cx="140" cy="140" r="134" fill="none" stroke="#66CC99" stroke-width="1.2" stroke-dasharray="8 5" opacity="0.35"/>
-    <circle cx="140" cy="140" r="120" fill="none" stroke="#66CC99" stroke-width="0.6" opacity="0.2"/>
-    <!-- Main circle -->
-    <circle cx="140" cy="140" r="108" fill="#2C3E50"/>
-    <circle cx="140" cy="140" r="101" fill="none" stroke="#66CC99" stroke-width="1" opacity="0.25"/>
-    <!-- Top arc mint -->
-    <path d="M 60 75 A 108 108 0 0 1 220 75" fill="none" stroke="#66CC99" stroke-width="2.5" stroke-linecap="round" opacity="0.7"/>
-    <!-- Bottom arc cream -->
-    <path d="M 60 205 A 108 108 0 0 0 220 205" fill="none" stroke="#FFCC66" stroke-width="2.5" stroke-linecap="round" opacity="0.7"/>
-    <!-- Crescent + star -->
-    <circle cx="140" cy="82" r="14" fill="#66CC99" opacity="0.9"/>
-    <circle cx="146" cy="79" r="10" fill="#2C3E50"/>
-    <polygon points="154,68 155.5,72.5 160,72.5 156.5,75 157.5,79.5 154,77 150.5,79.5 151.5,75 148,72.5 152.5,72.5" fill="#FFCC66" opacity="0.95"/>
-    <!-- 0.5% -->
-    <text x="140" y="152" text-anchor="middle" font-family="'Montserrat',sans-serif" font-size="50" font-weight="900" fill="#66CC99">0.5%</text>
-    <!-- Divider -->
-    <line x1="95" y1="163" x2="185" y2="163" stroke="#FFCC66" stroke-width="1" opacity="0.5"/>
-    <!-- of every sale -->
-    <text x="140" y="180" text-anchor="middle" font-family="'Montserrat',sans-serif" font-size="10" font-weight="700" fill="#FFCC66" letter-spacing="2">OF EVERY SALE</text>
-    <!-- Bengali -->
-    <text x="140" y="200" text-anchor="middle" font-family="'Noto Sans Bengali',sans-serif" font-size="10" fill="#66CC99" opacity="0.65">প্রতিটি বিক্রয় থেকে সদকা</text>
-    <!-- Corner dots -->
-    <circle cx="140" cy="6" r="3.5" fill="#FFCC66" opacity="0.7"/>
-    <circle cx="140" cy="274" r="3.5" fill="#FFCC66" opacity="0.7"/>
-    <circle cx="6" cy="140" r="3.5" fill="#66CC99" opacity="0.7"/>
-    <circle cx="274" cy="140" r="3.5" fill="#66CC99" opacity="0.7"/>
-  </svg>
+  <div style="
+    width:300px;height:300px;
+    margin:0 auto;position:relative;">
+
+    <svg width="100%" height="100%"
+         viewBox="0 0 300 300"
+         xmlns="http://www.w3.org/2000/svg">
+
+      <!-- Outer dashed ring — animated -->
+      <circle cx="150" cy="150" r="145"
+              fill="none" stroke="#66CC99"
+              stroke-width="1.2"
+              stroke-dasharray="10 6"
+              opacity="0.35">
+        <animateTransform attributeName="transform"
+          type="rotate"
+          from="0 150 150" to="360 150 150"
+          dur="22s" repeatCount="indefinite"/>
+      </circle>
+
+      <!-- Second ring -->
+      <circle cx="150" cy="150" r="132"
+              fill="none" stroke="#66CC99"
+              stroke-width="0.6" opacity="0.18"/>
+
+      <!-- Main dark circle -->
+      <circle cx="150" cy="150" r="120" fill="#2C3E50"/>
+
+      <!-- Inner accent ring -->
+      <circle cx="150" cy="150" r="112"
+              fill="none" stroke="#66CC99"
+              stroke-width="1" opacity="0.2"/>
+
+      <!-- Top arc — mint -->
+      <path d="M 55 90 A 118 118 0 0 1 245 90"
+            fill="none" stroke="#66CC99"
+            stroke-width="2.5"
+            stroke-linecap="round" opacity="0.65"/>
+
+      <!-- Bottom arc — cream -->
+      <path d="M 55 215 A 118 118 0 0 0 245 215"
+            fill="none" stroke="#FFCC66"
+            stroke-width="2.5"
+            stroke-linecap="round" opacity="0.65"/>
+
+      <!-- Crescent moon — SVG path (no emoji) -->
+      <circle cx="150" cy="72" r="20"
+              fill="#66CC99" opacity="0.85"/>
+      <circle cx="159" cy="68" r="15"
+              fill="#2C3E50"/>
+
+      <!-- Star next to crescent -->
+      <polygon
+        points="173,57 175,63 181,63 176,67 178,73 173,69 168,73 170,67 165,63 171,63"
+        fill="#FFCC66" opacity="0.92"/>
+
+      <!-- 0.5% main text -->
+      <text x="150" y="162"
+            text-anchor="middle"
+            font-family="'Montserrat',sans-serif"
+            font-size="56" font-weight="900"
+            fill="#66CC99">0.5%</text>
+
+      <!-- Divider line -->
+      <line x1="98" y1="174" x2="202" y2="174"
+            stroke="#FFCC66" stroke-width="1"
+            opacity="0.55"/>
+
+      <!-- OF EVERY SALE -->
+      <text x="150" y="192"
+            text-anchor="middle"
+            font-family="'Montserrat',sans-serif"
+            font-size="11" font-weight="700"
+            fill="#FFCC66"
+            letter-spacing="2">OF EVERY SALE</text>
+
+      <!-- Bengali text -->
+      <text x="150" y="212"
+            text-anchor="middle"
+            font-family="'Noto Sans Bengali',sans-serif"
+            font-size="11"
+            fill="#66CC99" opacity="0.7">প্রতিটি বিক্রয় থেকে সদকা</text>
+
+      <!-- 4 corner dots on outer ring -->
+      <circle cx="150" cy="5"   r="4" fill="#FFCC66" opacity="0.7"/>
+      <circle cx="150" cy="295" r="4" fill="#FFCC66" opacity="0.7"/>
+      <circle cx="5"   cy="150" r="4" fill="#66CC99" opacity="0.7"/>
+      <circle cx="295" cy="150" r="4" fill="#66CC99" opacity="0.7"/>
+
+      <!-- Decorative leaf hints -->
+      <path d="M75 60 Q82 70 75 80 Q68 70 75 60Z"
+            fill="#66CC99" opacity="0.12"/>
+      <path d="M225 60 Q232 70 225 80 Q218 70 225 60Z"
+            fill="#66CC99" opacity="0.12"/>
+      <path d="M75 220 Q82 230 75 240 Q68 230 75 220Z"
+            fill="#66CC99" opacity="0.12"/>
+      <path d="M225 220 Q232 230 225 240 Q218 230 225 220Z"
+            fill="#66CC99" opacity="0.12"/>
+
+    </svg>
+  </div>
 </div>
           <div class="bicon">☪️</div>
           <div class="bpct">0.5%</div>
