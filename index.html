@@ -348,54 +348,47 @@ footer{background:var(--ch-dk);padding:48px 0 24px;border-top:1px solid rgba(102
   .about-visual,.founder-visual{max-width:360px;margin:0 auto}
 }
 @media(max-width:600px){
-  #contact .container>div{grid-template-columns:1fr!important}
-#contact [style*="min-height:340px"]{min-height:260px!important}
-#contact [style*="padding: 36px 32px"]{
-  padding:28px 20px!important;
-  align-items:center!important;
-  text-align:center!important;
-}
-#contact .citem{justify-content:center!important}
-#contact [style*="display:flex;gap:10px;align-items:flex-start"]{
-  justify-content:center!important;
-  text-align:left!important;
-}
-#contact a[href*="maps"]{width:100%!important;justify-content:center!important}
-#contact a[href*="maps"]{width:100%!important;justify-content:center!important}
-#contact [style*="min-height:340px"]{min-height:260px!important}
-#contact [style*="padding: 36px 32px"]{
-  padding:28px 20px!important;
-  align-items:center!important;
-  text-align:center!important;
-}
-#contact .citem{justify-content:center!important}
-#contact [style*="display:flex;gap:10px;align-items:flex-start"]{
-  justify-content:center!important;
-  text-align:left!important;
-}
-#contact [style*="min-height:340px"]{min-height:260px!important}
-#contact [style*="padding: 36px 32px"]{
-  padding:28px 20px!important;
-  align-items:center!important;
-  text-align:center!important;
-}
-#contact .citem{justify-content:center!important}
-#contact [style*="display:flex;gap:10px;align-items:flex-start"]{
-  justify-content:center!important;
-  text-align:left!important;
-}
-#contact [style*="min-height:340px"]{min-height:260px!important}
-#contact [style*="padding: 36px 32px"]{
-  padding:28px 20px!important;
-  align-items:center!important;
-  text-align:center!important;
-}
-#contact .citem{justify-content:center!important}
-#contact [style*="display:flex;gap:10px;align-items:flex-start"]{
-  justify-content:center!important;
-  text-align:left!important;
-}
-  .hcard.feat{flex-direction:column!important}
+#contact .container>div{grid-template-columns:1fr!important}
+
+  /* ১. Our Location + Urban Basket header — center */
+  #contact [style*="Our Location"],
+  #contact [style*="Urban Basket™"]{text-align:center!important}
+  #contact [style*="display:flex;align-items:center;gap:14px"]{
+    justify-content:center!important;
+    flex-wrap:wrap!important;
+    text-align:center!important;
+  }
+
+  /* ২. Open in Google Maps button — center */
+  #contact a[href*="maps"]{
+    width:100%!important;
+    justify-content:center!important;
+    text-align:center!important;
+    box-sizing:border-box!important;
+  }
+
+  /* ৩. Map pin / iframe — center */
+  #contact [style*="min-height:340px"]{
+    min-height:260px!important;
+    width:100%!important;
+  }
+
+  /* Location info section */
+  #contact [style*="padding: 36px 32px"],
+  #contact [style*="padding:36px 32px"]{
+    padding:24px 16px!important;
+    align-items:center!important;
+    text-align:center!important;
+  }
+
+  /* Address items */
+  #contact .citem{justify-content:center!important}
+  #contact [style*="display:flex;gap:10px;align-items:flex-start"]{
+    justify-content:center!important;
+  }
+
+  /* Divider */
+  #contact [style*="height:1px"]{margin:8px auto!important}
 .hcard.feat>div:last-child{width:100%!important;min-width:100%!important;height:160px!important}
   .sp{padding:56px 0}
   .pgrid{grid-template-columns:1fr}
