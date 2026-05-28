@@ -1013,11 +1013,63 @@ style="width:100%;height:100%;object-fit:cover;display:block;">
           <div class="citem"><div class="cion">📘</div><div><div class="cilabel">Facebook</div><div class="cival"><a href="https://www.facebook.com/UrbanBasketBD" target="_blank">facebook.com/UrbanBasketBD</a></div></div></div>
         </div>
         <div class="map-wrap">
-          <div class="map-inner">
-            <span style="font-size:36px">📍</span>
-            <p>15/9/C Modhubag, Mogbazar, Dhaka-1217</p>
-            <a href="https://maps.app.goo.gl/856a1S3wZ7TcfcG77" target="_blank">Open in Google Maps →</a>
-          </div>
+         <div class="map-inner" style="
+  background: var(--mint-lt);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border-radius: 14px;
+  padding: 20px;">
+
+  <!-- Location Image -->
+  <img src="location.png" alt="Urban Basket Location"
+       style="
+         width: 80px;
+         height: 80px;
+         object-fit: contain;
+         filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
+         transition: transform .3s;
+       "
+       onmouseover="this.style.transform='scale(1.1)'"
+       onmouseout="this.style.transform='scale(1)'">
+
+  <!-- Address -->
+  <p style="
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--ch);
+    text-align: center;
+    margin: 0;
+  ">15/9/C Modhubag, Mogbazar, Dhaka-1217</p>
+
+  <!-- Google Maps Link -->
+  <a href="https://maps.google.com/?q=Mogbazar,Dhaka,Bangladesh"
+     target="_blank"
+     style="
+       font-family: 'Montserrat', sans-serif;
+       font-size: 13px;
+       font-weight: 700;
+       color: var(--mint-dk);
+       text-decoration: none;
+       display: flex;
+       align-items: center;
+       gap: 5px;
+       padding: 8px 18px;
+       background: white;
+       border-radius: 8px;
+       box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+       transition: all .2s;
+     "
+     onmouseover="this.style.background='var(--mint)';this.style.color='white'"
+     onmouseout="this.style.background='white';this.style.color='var(--mint-dk)'">
+    📍 Open in Google Maps →
+  </a>
+
+</div>
         </div>
       </div>
       <div class="reveal" style="transition-delay:.15s">
